@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+    --bg-header:#5da5a4;
+    --body:#f0fafb;
+}
+body,html{
+    background-color: var(--body);
+}
+.box-shadow-ss{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.elem_1:nth-child(1)::before,
+.elem_1:nth-child(2)::before{
+   @apply absolute content-[''] top-0 left-0 h-full w-[5px] bg-[#5da1a2]
+}
